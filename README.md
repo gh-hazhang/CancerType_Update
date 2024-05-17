@@ -6,6 +6,5 @@ This repository is part of a collaborative initiative to update the "cancerother
 ## Getting Started
 
 ### Repository Structure
-- `df_merged.csv`: The main CSV file containing the dataset with missing values in the "cancerother" column.
-- `Data_Extraction.ipynb`: A Jupyter Notebook explaining how the data was pulled from the data warehouse.
-
+- **`df_all_ruo.csv`**: This is the primary CSV file that consolidates all RUO and IST data up to May 16, 2024. It contains critical fields such as the delivered report file name, Account name, SOW number, and file_creator. The "cancerother" column, specifically, requires updating to fill in missing cancer type information.
+- **`data_extraction.ipynb`**: A Jupyter Notebook that details the data extraction process from the data warehouse. This script is used for pulling comprehensive RUO/IST data and includes instructions for locating `fc_dir` and `mbd_dir` (contains essential files like `msre_caller_mr_features.hdr.tsv` necessary for subsequent CSO caller run).
